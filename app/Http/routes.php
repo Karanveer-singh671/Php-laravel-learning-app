@@ -26,7 +26,27 @@
 //Route::get('/post/{id}/{name}', 'PostsController@show_post');
 
 
-Route::get('/insert', function() {
+//Route::get('/insert', function() {
+//
+//    DB::insert('insert into posts(title, body) values(?,?)', ['Php with Laravel', 'Best thing ever']);
+//});
+//
+//Route::get('/read', function() {
+//
+//    $result = DB::select('select * from posts where id=?', [1]);
+//
+//    foreach ($result as $post) {
+//        // no dollar sign on title since just a property of the post variable created use arrows to access properties
+//        return $post->title;
+//    }
+//});
 
-    DB::insert('insert into posts(title, body) values(?,?)', ['Php with Laravel', 'Best thing ever']);
-});
+//Route::get('/update', function() {
+//   $updated = DB::update('update posts set title = "Update Title" where id=?', [1]);
+//   return $updated;
+//});
+//
+//Route::get('/delete', function() {
+//    $deleted = DB::delete('delete from posts where id=?', [1]);
+//    return $deleted;
+//});
