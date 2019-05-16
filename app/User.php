@@ -43,4 +43,9 @@ class User extends Authenticatable
         // if named pivot table user_roles would need to specify these extra FKs since laravel won't know but since we did we don't need to
 
     }
+
+    public function photos(){
+        // we are morphing photo model and
+        return $this->morphMany('App\Photo', 'imageable');
+    }
 }

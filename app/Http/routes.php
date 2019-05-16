@@ -222,3 +222,12 @@ use App\Country;
 //      return $post->title;
 //    }
 //});
+
+// Polymorphic relations
+
+Route::get('user/photos', function($id){
+    $user = User::find($id);
+    foreach ($user->photos as $photo) {
+        echo $photo->path;
+    }
+});
