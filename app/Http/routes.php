@@ -80,14 +80,85 @@ use App\Post;
 
 
 //Route::get('/findwhere', function(){
-////    $posts = Post::where('id', 3)->orderBy('id', 'desc')->take(1)->get();
+//    $posts = Post::where('id', 3)->orderBy('id', 'desc')->take(1)->get();
+//    return $posts;
+//});
+//
+//Route::get('/findmore', function(){
+////    $posts = Post::findOrFail(1);
 ////    return $posts;
-////});
-////
-////Route::get('/findmore', function(){
-//////    $posts = Post::findOrFail(1);
-//////    return $posts;
-////    // take first or fail otherwise
-////    $posts = Post::where('users_count', '<', 50)->firstOrFail();
-////
-////});
+//    // take first or fail otherwise
+//    $posts = Post::where('users_count', '<', 50)->firstOrFail();
+//
+//});
+
+//Route::get('/basicinsert', function(){
+//    // create a new Post from the Post model
+//    $post = new Post;
+//    // add necessary values for columns
+//    $post->title = 'New Eloquent title insert';
+//    $post->body = "wow this is the content";
+//    // save the record
+//    $post->save();
+//
+//});
+//
+//Route::get('/basicinsertfind', function(){
+//    // create a new Post from the Post model
+//    $post = Post::find(2);
+//    // add necessary values for columns
+//    $post->title = 'New Eloquent title insert 2';
+//    $post->body = "wow this is the content 2";
+//    // update the record when saving
+//    $post->save();
+//
+//});
+
+//Route::get('/create', function(){
+//
+//    Post::create(['title'=>'the create method', 'body'=> 'Wow crazy stuff']);
+//});
+
+//Route::get('/update', function(){
+//   Post::where('id', 2)->where('is_admin', 0)->update(['title'=>'New php title', 'body'=> 'WOW love it']);
+//});
+
+//Route::get('/delete', function(){
+//   $post = Post::find(2);
+//   // once find call the delete method to
+//   $post->delete();
+//});
+
+//Route::get('/delete2', function(){
+////   Post::destroy(3);
+//    // instead of find if know the key can use destroy
+//     Post::destroy([4,5]);
+//
+////     Post::where('is_admin', 0)->delete();
+//});
+
+//Route::get('/softdelete', function(){
+//   Post::find(1)->delete();
+//});
+
+//Route::get('/readsoftdelete', function(){
+////    $post = Post::find(1);
+////    return $post;
+//    // by default the find will not return something that was soft delete so need to use withTrashed to check if id is there
+////    $post = Post::withTrashed()->where('id', 1)->get();
+////    return $post;
+//
+////    $post = Post::onlyTrashed()->where('id', 1)->get();
+////    return $post;
+//    $post = Post::onlyTrashed()->where('is_admin', 0)->get();
+//    return $post;
+//});
+
+Route::get('/restore', function(){
+  Post::withTrashed()->where('is_admin', 0)->restore();
+});
+
+// need to use forceDelete for permanent deletion
+Route::get('/forcedelete', function(){
+   Post::onlyTrashed()->where('is_admin', 0)->forceDelete();
+});
