@@ -20,4 +20,9 @@ class Post extends Model
     ];
 
     protected $dates = ['deleted_at'];
+
+    public function user(){
+        // this user belongs to this post
+        return $this->belongsTo('App\User');
+    }
 }

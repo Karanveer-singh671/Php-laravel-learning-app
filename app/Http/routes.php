@@ -12,6 +12,8 @@
 */
 // import Post model then can just refer to Post model as Post instead of App\Post each time
 use App\Post;
+use App\User;
+use App\Country;
 
 //Route::get('/', function () {
 //    return view('welcome');
@@ -154,11 +156,69 @@ use App\Post;
 //    return $post;
 //});
 
-Route::get('/restore', function(){
-  Post::withTrashed()->where('is_admin', 0)->restore();
-});
+//Route::get('/restore', function(){
+//  Post::withTrashed()->where('is_admin', 0)->restore();
+//});
+//
+//// need to use forceDelete for permanent deletion
+//Route::get('/forcedelete', function(){
+//   Post::onlyTrashed()->where('is_admin', 0)->forceDelete();
+//});
 
-// need to use forceDelete for permanent deletion
-Route::get('/forcedelete', function(){
-   Post::onlyTrashed()->where('is_admin', 0)->forceDelete();
-});
+/*
+|--------------------------------------------------------------------------
+| Eloquent Relationships
+|--------------------------------------------------------------------------
+*/
+
+// One to One relationship
+//Route::get('/user/{id}/post', function($id){
+//    return User::find($id)->post;
+//
+//    // could also pull out title of post after finding by
+////    return User::find($id)->post->title;
+//});
+//
+//Route::get('/post/{id}/user', function($id){
+//   return Post::find($id)->user->name;
+//});
+
+//One to Many relationship
+//Route::get('/posts', function(){
+//    // find 1 user and get all the posts titles of that user
+//    $user = User::find(1);
+//    // will look in users model and look for posts method
+//    foreach ($user->posts as $post) {
+//        echo $post->title . "<br>";
+//    }
+//});
+
+// make pivot table (connecting table) singular and in order i.e lower alphabet first word then next
+
+//Route::get('/user/{id}/role', function($id){
+//   $user = User::find($id)->roles()->orderBy('id', 'desc')->get();
+//   // return all the roles in descending order
+//   return $user;
+//
+////   foreach ($user->roles as $role) {
+////       return $role->name;
+////   }
+//});
+//
+//// Accessing intermediate (pivot table)
+//
+//Route::get('/user/pivot', function(){
+//   $user = User::find(1);
+//   foreach ($user->roles as $role) {
+//       // access the pivot table and the created at column from the pivot table
+//       echo $role->pivot->created_at;
+//   }
+//});
+//
+//Route::get('/user/country', function(){
+//    $country = Country::find(1);
+//    // goes to Country model then to posts method in the Country model represent as a $post then return the title for each
+//    foreach ($country->posts as $post) {
+//      return $post->title;
+//    }
+//});
