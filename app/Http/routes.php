@@ -14,6 +14,8 @@
 use App\Post;
 use App\User;
 use App\Country;
+use App\Photo;
+use App\Tag;
 
 //Route::get('/', function () {
 //    return view('welcome');
@@ -225,9 +227,33 @@ use App\Country;
 
 // Polymorphic relations
 
-Route::get('user/photos', function($id){
-    $user = User::find($id);
-    foreach ($user->photos as $photo) {
-        echo $photo->path;
-    }
-});
+//Route::get('user/photos', function($id){
+//    $user = User::find($id);
+//    foreach ($user->photos as $photo) {
+//        echo $photo->path;
+//    }
+//});
+
+//Route::get('photo/{id}/post', function($id){
+//    $photo = Photo::findorFail($id);
+//
+//    return $photo->imageable;
+//});
+
+//Polymorphic many to many
+//Route::get('/post/tag', function (){
+//    $post = Post::find(1);
+//    // got all tags for the post
+//    foreach ($post->tags as $tag) {
+//        // get the name column in the tags table and display
+//        echo $tag->name;
+//    }
+//});
+
+//Route::get('/tag/post', function (){
+//    $tag = Tag::find(2);
+//    // get all the posts with this tag
+//    foreach ($tag->posts as $post) {
+//        echo $post->title;
+//    }
+//});
