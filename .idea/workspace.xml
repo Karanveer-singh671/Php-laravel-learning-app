@@ -2,43 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="591fa1e0-33c5-4d96-be00-0b18de2f340e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/cms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Country.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Events/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Events/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/Job.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/Job.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Photo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Taggable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Taggable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ModelFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_16_011131_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_16_011131_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
-              <caret line="260" column="27" lean-forward="true" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
+              <caret line="260" column="27" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
               <folding>
                 <element signature="e#7#392#0#PHP" expanded="true" />
                 <element signature="e#486#499#0#PHP" expanded="true" />
@@ -67,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="111" selection-end-column="24" />
+            <state relative-caret-position="294">
+              <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -79,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
+            <state relative-caret-position="578">
+              <caret line="205" column="52" selection-start-line="205" selection-start-column="52" selection-end-line="205" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -101,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/posts/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="60" lean-forward="true" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+              <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -109,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/posts/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="306">
+              <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -118,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/posts/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="277">
+              <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -193,12 +160,12 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/posts/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/posts/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/posts/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" />
-        <option value="$PROJECT_DIR$/resources/views/posts/edit.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/resources/views/posts/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/posts/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" />
       </list>
     </option>
   </component>
@@ -265,6 +232,7 @@
       <path value="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure" />
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -402,18 +370,18 @@
       <workItem from="1557959524801" duration="8595000" />
       <workItem from="1558043177803" duration="5882000" />
       <workItem from="1558372357303" duration="5129000" />
-      <workItem from="1558391536161" duration="5101000" />
+      <workItem from="1558391536161" duration="6976000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31068000" />
+    <option name="totallyTimeSpent" value="32943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1073" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14496644" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14496644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -427,7 +395,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.25070822" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.25070822" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -694,7 +662,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
-          <caret line="260" column="27" lean-forward="true" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
+          <caret line="260" column="27" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
           <folding>
             <element signature="e#7#392#0#PHP" expanded="true" />
             <element signature="e#486#499#0#PHP" expanded="true" />
@@ -705,14 +673,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/posts/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="60" lean-forward="true" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/posts/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -720,23 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="111" selection-end-column="24" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/posts/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -749,8 +693,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
+        <state relative-caret-position="578">
+          <caret line="205" column="52" selection-start-line="205" selection-start-column="52" selection-end-line="205" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/posts/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/posts/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

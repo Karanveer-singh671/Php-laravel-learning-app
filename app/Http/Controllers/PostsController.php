@@ -43,7 +43,12 @@ class PostsController extends Controller
     {
         //
 //        return $request->all(); // returns all properties of the request sent
-//
+//       persists data to application using this
+
+        $this->validate($request, [
+           'title'=>'required',
+            'body'=> 'required',
+        ]);
         Post::create($request->all());
 
         return redirect('/posts');
