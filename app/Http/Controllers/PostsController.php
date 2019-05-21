@@ -44,17 +44,50 @@ class PostsController extends Controller
     public function store(Request $request)
     {
         //
+
+        $input = $request->all();
+
+        if($file = $request->file('file')){
+
+            $name = $file->getClientOriginalName();
+            // will create an images folder
+            $file->move('images', $name);
+
+            // input param should be column name in table (aka column in posts table so have a path column name and refer to it here
+            $input['path'] = $name;
+
+        }
+            // to edit path column need to give permission or else massAssignment error go to Posts model and allow in fillable
+        Post::create($input);
+
+
+
+
+
+
+
+
+//        $file = $request->file('file');
+//        echo '<br>';
+//
+//        echo $file->getClientOriginalName();
+//
+//        echo '<br>';
+//        // return size of file in bytes (could use this to say if over certain size do not accept)
+//        echo $file->getClientSize();
+
+
 //        return $request->all(); // returns all properties of the request sent
 
         // will create an errors object of having these fields required if not filled in on request
-        $this->validate($request, [
-           'title'=>'required',
-            'body'=> 'required',
-        ]);
-        //       persists data to application using this
-        Post::create($request->all());
-
-        return redirect('/posts');
+//        $this->validate($request, [
+//           'title'=>'required',
+//            'body'=> 'required',
+//        ]);
+//        //       persists data to application using this
+//        Post::create($request->all());
+//
+//        return redirect('/posts');
 
 //        $input = $request->all();
 //        $input['title'] = $request->title;

@@ -4,12 +4,19 @@
 @section('content')
     <h1>Create Post</h1>
 {{--    <form method="post" action="/posts" >--}}
-<!-- curly braces mean doing filtering using blade and letting you input passed data in, the !! on each side means don't filter anything -->
-        {!! Form::open(['method'=>'POST', 'action'=>'PostsController@store']) !!}
+<!-- curly braces mean doing filtering using blade and letting you input passed data in, the !! on each side means don't filter anything
+to accept files and get an enctype attribute need to add 'files'=> true-->
+        {!! Form::open(['method'=>'POST', 'action'=>'PostsController@store', 'files'=>true]) !!}
+
 
     <div class="form-group">
         {!! Form::label('title', 'Title:') !!}
         {!! Form::text('title',null, ['class'=>'form-control']) !!}
+    </div>
+
+    <div class="form-group">
+{{--            in controller to access this file use $request->file('file') since called key file here--}}
+        {!! Form::file('file', ['class'=>'form-control']) !!}
     </div>
         <!-- the name field in tag value will be the column in posts named 'title -->
 {{--        <input type="text", name="title" placeholder="Enter Title">--}}
