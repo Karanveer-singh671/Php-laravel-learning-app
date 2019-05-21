@@ -34,4 +34,8 @@ class Post extends Model
         // get all the tags
         return $this->morphToMany('cms\Tag', 'taggable');
     }
+    // create a query scope
+    public static function scopeLatest($query){
+        return $query->orderBy('id', 'asc')->get();
+    }
 }

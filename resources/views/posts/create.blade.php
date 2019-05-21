@@ -13,16 +13,26 @@
     </div>
         <!-- the name field in tag value will be the column in posts named 'title -->
 {{--        <input type="text", name="title" placeholder="Enter Title">--}}
-
+    <div class="form-group">
     {!! Form::submit('Create Post', ['class'=>'btn btn-primary']) !!}
-        <input type="submit", name="submit">
+{{--        <input type="submit", name="submit">--}}
+    </div>
     {!! Form::close() !!}
+
+    @if(count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+
+
+                @endforeach
+            </ul>
+        </div>
 {{--    </form>--}}
 @endsection
     
-    
-    
-    
+
     
     
     

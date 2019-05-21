@@ -3,6 +3,7 @@
 namespace cms\Http\Controllers;
 
 use Illuminate\Http\Request;
+use cms\Http\Controllers\Controller;
 
 use cms\Http\Requests;
 use cms\Post;
@@ -18,7 +19,8 @@ class PostsController extends Controller
     {
         //
         //brings data down to use in view need to use compact and have same name as variable
-        $posts = Post::all();
+//        $posts = Post::all();
+        $posts = Post::scopeLatest();
         return view('posts.index', compact('posts'));
     }
 
@@ -43,12 +45,13 @@ class PostsController extends Controller
     {
         //
 //        return $request->all(); // returns all properties of the request sent
-//       persists data to application using this
 
+        // will create an errors object of having these fields required if not filled in on request
         $this->validate($request, [
            'title'=>'required',
             'body'=> 'required',
         ]);
+        //       persists data to application using this
         Post::create($request->all());
 
         return redirect('/posts');

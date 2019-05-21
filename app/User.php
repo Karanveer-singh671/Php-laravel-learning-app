@@ -51,4 +51,14 @@ class User extends Authenticatable
         // get all the photos of this user
         return $this->morphMany('cms\Photo', 'imageable');
     }
+
+    public function getNameAttribute($value){
+        //accessors allow you to get a value out of the database
+        return ucfirst($value);
+
+    }
+    public function setNameAttribute($value){
+        // mutators allow you to mutate data before putting in db
+        $this->attributes['name'] = strtoupper(($value));
+    }
 }

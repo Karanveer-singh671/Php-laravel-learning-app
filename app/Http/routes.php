@@ -16,6 +16,7 @@ use cms\User;
 use cms\Country;
 use cms\Photo;
 use cms\Tag;
+use Carbon\Carbon;
 
 //Route::get('/', function () {
 //    return view('welcome');
@@ -257,5 +258,44 @@ use cms\Tag;
 //        echo $post->title;
 //    }
 //});
-// route specifies which controller to go to when type specific URI in URL
-Route::resource('/posts', 'PostsController');
+// route specifies which controller to go to when type specific URI in URL, will get a get post delete update route if use resource
+// web means available to everyone if used 'auth' would only be available to logged in users
+Route::group(['middleware'=>'web'], function() {
+    Route::resource('/posts', 'PostsController');
+    // now errors array is available to use in these routes
+
+    Route::get('/dates', function(){
+        $date = new DateTime('+1 week');
+        echo $date->format('m-d-Y');
+
+        echo '<br>';
+        echo Carbon::now()->addDay(10)->diffForHumans();
+        echo '<br>';
+        echo Carbon::now()->subMonth(5)->diffForHumans();
+        echo '<br>';
+        echo Carbon::now()->yesterday()->diffForHumans();
+
+    });
+
+    Route::get('/getname', function(){
+        $user = User::find(1);
+
+        echo $user->name;
+    });
+
+    Route::get('/setname', function(){
+        $user = User::find(1);
+
+      $user->name = 'william';
+      $user->save();
+    });
+
+
+
+
+
+
+
+});
+
+
