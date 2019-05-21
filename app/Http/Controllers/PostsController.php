@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace cms\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
+use cms\Http\Requests;
+use cms\Post;
 
 class PostsController extends Controller
 {
@@ -16,7 +17,9 @@ class PostsController extends Controller
     public function index($id)
     {
         //
-        return 'its working' . $id;
+        //brings data down to use in view need to use compact and have same name as variable
+        $posts = Post::all();
+        return view('posts.index', compact('posts'));
     }
 
     /**
@@ -27,6 +30,7 @@ class PostsController extends Controller
     public function create()
     {
         //
+        return view('posts.create');
     }
 
     /**
@@ -38,6 +42,19 @@ class PostsController extends Controller
     public function store(Request $request)
     {
         //
+//        return $request->all(); // returns all properties of the request sent
+//
+        Post::create($request->all());
+
+        return redirect('/posts');
+
+//        $input = $request->all();
+//        $input['title'] = $request->title;
+//        Post::create($request->all());
+
+//        $post = new Post;
+//        $post->title = $request->title;
+//        $post->save();
     }
 
     /**
@@ -49,6 +66,9 @@ class PostsController extends Controller
     public function show($id)
     {
         //
+        $post = Post::findOrFail($id);
+        // now displays view and have access to $post variable in view!
+        return view('posts.show', compact(post));
     }
 
     /**
@@ -60,6 +80,8 @@ class PostsController extends Controller
     public function edit($id)
     {
         //
+        $post = Post::findOrFail($id);
+        return view('posts.edit', compact('post'));
     }
 
     /**
@@ -72,6 +94,9 @@ class PostsController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $post = Post::findOrFail($id);
+        $post->update($request->all());
+        return redirect('/posts');
     }
 
     /**
@@ -83,6 +108,9 @@ class PostsController extends Controller
     public function destroy($id)
     {
         //
+        $post = Post::findOrFail($id);
+        $post->delete();
+        return redirect('/posts');
     }
     // custom method not added with command php artisan make:controller --resource CONTROLLER_NAME
     public function contact() {

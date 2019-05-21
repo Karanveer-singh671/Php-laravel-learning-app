@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace cms;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -23,15 +23,15 @@ class Post extends Model
 
     public function user(){
         // this user belongs to this post
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('cms\User');
     }
 
     public function photos(){
-        return $this->morphMany('App\Photo', 'imageable');
+        return $this->morphMany('cms\Photo', 'imageable');
     }
 
     public function tags(){
         // get all the tags
-        return $this->morphToMany('App\Tag', 'taggable');
+        return $this->morphToMany('cms\Tag', 'taggable');
     }
 }

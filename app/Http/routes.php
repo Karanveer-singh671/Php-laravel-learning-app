@@ -10,12 +10,12 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-// import Post model then can just refer to Post model as Post instead of App\Post each time
-use App\Post;
-use App\User;
-use App\Country;
-use App\Photo;
-use App\Tag;
+// import Post model then can just refer to Post model as Post instead of cms\Post each time
+use cms\Post;
+use cms\User;
+use cms\Country;
+use cms\Photo;
+use cms\Tag;
 
 //Route::get('/', function () {
 //    return view('welcome');
@@ -257,3 +257,5 @@ use App\Tag;
 //        echo $post->title;
 //    }
 //});
+// route specifies which controller to go to when type specific URI in URL
+Route::resource('/posts', 'PostsController');
